@@ -4,7 +4,7 @@
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace UmarWeb.Migrations
+namespace  BookStore.Migrations
 {
     /// <inheritdoc />
     public partial class SeedCategoryData : Migration

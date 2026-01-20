@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using UmarWeb.Models;
+using  BookStore.Models;
 
-namespace UmarWeb.Data
+namespace  BookStore.Data
 {
     public class ApplicationDbContext:DbContext
     {
@@ -14,8 +14,7 @@ namespace UmarWeb.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Category>().HasData(
-
-                new Category { CategoryId=1,CategoryName="Action",DisplayOrder=1},
+                new Category { CategoryId = 1, CategoryName = "Action", DisplayOrder=1 },
                 new Category { CategoryId = 2, CategoryName = "Sci-Fi", DisplayOrder = 2 },
                 new Category { CategoryId = 3, CategoryName = "History", DisplayOrder = 3 }
                 );

@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
-using UmarWeb.Data;
+using  BookStore.Data;
+using BookStore.Repository.IRepository;
+using BookStore.Repository;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,8 +10,11 @@ var ConnectionStr = builder.Configuration.GetConnectionString("DefaultConnection
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
+builder.Services.AddDbContext<ApplicationDbContext>(options=>
 options.UseSqlServer(ConnectionStr));
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+
+
 
 
 

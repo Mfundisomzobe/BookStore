@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace UmarWeb.Migrations
+namespace  BookStore.Migrations
 {
     /// <inheritdoc />
     public partial class Init : Migration

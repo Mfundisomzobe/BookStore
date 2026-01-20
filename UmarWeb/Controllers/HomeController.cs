@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using UmarWeb.Models;
+using  BookStore.Models;
 
-namespace UmarWeb.Controllers;
+namespace  BookStore.Controllers;
 
 public class HomeController : Controller
 {

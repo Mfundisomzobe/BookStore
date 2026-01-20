@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using UmarWeb.Data;
+using  BookStore.Data;
 
 #nullable disable
 
-namespace UmarWeb.Migrations
+namespace  BookStore.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20260108164308_Init")]
@@ -24,7 +24,7 @@ namespace UmarWeb.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("UmarWeb.Models.Category", b =>
+            modelBuilder.Entity(" BookStore.Models.Category", b =>
                 {
                     b.Property<int>("CategoryId")
                         .ValueGeneratedOnAdd()
